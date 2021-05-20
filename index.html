@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link rel="stylesheet" href="css/normalize.min.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+<body>
+
+<header>
+	<h1>Interactive Unit Circle</h1>
+	<!-- <button class="menu">&#9776;</button> -->
+	<div class="checkbox-input">
+		<span>Degrees</span>
+		<input type="checkbox" id="toggle" class="offscreen"/><label for="toggle" class="switch"></label>
+		<span>Radians</span>
+	</div>
+</header>
+
+<div class="angle-info">
+	<div class="angle">
+		<div class="curr-info"><span>θ = </span><span id="curr-angle-deg">45°</span></div>
+		<div class="curr-info"><span>θ = </span><span id="curr-angle-rad">0.785</span><span> rad</span></div>
+	</div>
+	<div class="trig">
+		<div class="curr-info"><span>sin(θ) = </span><span id="curr-sin">0</span></div>
+		<div class="curr-info"><span>cos(θ) = </span><span id="curr-cos">0</span></div>
+	</div>
+</div>
+
+<div class="wrapper">
+	<canvas class="circle"></canvas>
+	<canvas class="line"></canvas>
+</div>
+
+<footer></footer>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
+
+
